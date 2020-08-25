@@ -1,7 +1,7 @@
 <?php
 
 
-namespace api\controllers\base;
+namespace backend\modules\api\controllers\base;
 
 use yii\rest\Controller;
 use yii\web\NotFoundHttpException;

@@ -11,10 +11,12 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ]
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -42,9 +44,23 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'api/login' => 'api/site/login',
+
+                'GET api/news' => 'api/news/index',
+
+                'GET api/category' => 'api/category/index',
             ],
         ],
+        'response' => [
+            'format' => yii\web\Response::FORMAT_JSON,
+            'charset' => 'UTF-8',
+        ],
 
+    ],
+    'modules' => [
+        'api' => [
+            'class' => 'backend\modules\api\Api',
+        ],
     ],
     'params' => $params,
 ];

@@ -1,6 +1,6 @@
 <?php
 
-namespace api\models\news;
+namespace backend\modules\api\models\news;
 
 
 use common\models\News;

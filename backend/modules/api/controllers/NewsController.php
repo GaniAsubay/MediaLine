@@ -1,10 +1,10 @@
 <?php
 
-namespace api\controllers;
+namespace backend\modules\api\controllers;
 
 
-use api\controllers\base\BaseController;
-use api\models\news\NewsApi;
+use backend\modules\api\controllers\base\BaseController;
+use backend\modules\api\models\news\NewsApi;
 use yii\filters\AccessControl;
 use yii\filters\auth\HttpBasicAuth;
 use yii\filters\auth\HttpBearerAuth;

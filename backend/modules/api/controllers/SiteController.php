@@ -1,12 +1,9 @@
 <?php
-namespace api\controllers;
+namespace backend\modules\api\controllers;
 
-use api\controllers\base\BaseController;
+use backend\modules\api\controllers\base\BaseController;
 use common\models\LoginForm;
 use Yii;
-use yii\base\InvalidArgumentException;
-use yii\helpers\Url;
-use yii\web\BadRequestHttpException;
 /**
  * Site controller
  */

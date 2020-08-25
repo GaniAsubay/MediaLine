@@ -1,6 +1,6 @@
 <?php
 
-namespace api\models\category;
+namespace backend\modules\api\models\category;
 
 
 use common\models\Category;
