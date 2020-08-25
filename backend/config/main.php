@@ -51,10 +51,6 @@ return [
                 'GET api/category' => 'api/category/index',
             ],
         ],
-        'response' => [
-            'format' => yii\web\Response::FORMAT_JSON,
-            'charset' => 'UTF-8',
-        ],
 
     ],
     'modules' => [
